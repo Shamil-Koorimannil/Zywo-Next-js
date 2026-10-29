@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zywo â€” Creative Marketing & Branding Agency | Every Impression Matters</title>
+  <meta name="description"
+    content="Zywo is a premier creative marketing, branding, and digital experience agency in Kerala. We craft distinctive brand identities, high-impact campaigns, and modern web platforms. Every Impression Matters." />
+  <meta name="keywords"
+    content="Zywo, creative agency Kerala, branding agency Calicut, advertising agency Malappuram, web development, UI/UX design, video production, digital marketing" />
+
+  <!-- Canonical & Open Graph Metadata -->
+  <link rel="canonical" href="https://zywo.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zywo.com/" />
+  <meta property="og:title" content="Zywo â€” Every Impression Matters" />
+  <meta property="og:description"
+    content="A creative marketing and branding agency elevating ambitious brands through visual distinction and performance." />
+  <meta property="og:image" content="./assets/logo/zywo%20logo.webp" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Zywo â€” Every Impression Matters" />
+  <meta property="twitter:description"
+    content="A creative marketing and branding agency elevating ambitious brands through visual distinction and performance." />
+  <meta property="twitter:image" content="./assets/logo/zywo%20logo.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/logo/Zywo%20favicon.svg" />
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- External Animation & 3D Libraries (CDN with fallback to node_modules) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Encapsulated Web Components -->
+  <script type="module" src="./components/Navbar.js"></script>
+  <script type="module" src="./components/ZywoCanvas.js"></script>
+  <script type="module" src="./components/ConnectButton.js"></script>
+  <script type="module" src="./components/Footer.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Shared Editorial Header -->
+  <bento-navbar></bento-navbar>
+
+  <main class="camera-stage" id="cameraStage">
+    <div class="camera-world" id="cameraWorld">
+      <!-- ====================================================================
+           SECTION 01: HERO — EVERY IMPRESSION MATTERS (PORTFOLIO-LED)
+           ==================================================================== -->
+      <section class="hero-section camera-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-tagline-badge">
+              <span class="dot"></span>
+              <span>Every Impression Matters</span>
+            </div>
+
+            <h1 class="hero-title">
+              Crafting <span class="accent">distinctive</span> brands for the modern era.
+            </h1>
+
+            <p class="hero-statement">
+              Zywo is an independent creative agency blending strategic precision, editorial design, and digital innovation to turn ambitious businesses into market leaders.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#selected-work" class="btn-primary">
+                <span>Explore Our Work</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+
+              <button class="btn-secondary" data-open-connect>
+                <span>Start a Project</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <div class="hero-meta-strip">
+              <div class="hero-meta-item">
+                <div class="number">20+</div>
+                <div class="label">Client Partners</div>
+              </div>
+              <div class="hero-meta-item">
+                <div class="number">100%</div>
+                <div class="label">Bespoke Craft</div>
+              </div>
+              <div class="hero-meta-item">
+                <div class="number">Kerala</div>
+                <div class="label">Calicut & Malappuram</div>
+              </div>
+            </div>
+
+            <div class="scroll-cue">
+              <span class="scroll-cue-line"></span>
+              <span>Scroll to discover</span>
+            </div>
+          </div>
+
+          <!-- Hero Portfolio Visual Stage with Supporting 3D Enhancement -->
+          <div class="hero-visual-stage">
+            <div class="hero-canvas-3d">
+              <zywo-canvas></zywo-canvas>
+            </div>
+
+            <div class="hero-portfolio-stack">
+              <!-- Primary Client Project Card: Coolcane -->
+              <a href="Campaign/campaign-coolcane.html" class="hero-card-main" aria-label="View Coolcane Campaign">
+                <img src="./assets/Campaign/Coolcane/Coolcane copy.webp" alt="Coolcane Brand Campaign Artwork" />
+                <div class="hero-card-badge">
+                  <div>
+                    <div class="project-title">Coolcane</div>
+                    <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 2px;">Irumb Karimbaakum Campaign</div>
+                  </div>
+                  <span class="project-tag">Case Study</span>
+                </div>
+              </a>
+
+              <!-- Secondary Supporting Client Card: Mouzy -->
+              <a href="Campaign/campaign-detail.html" class="hero-card-sub" aria-label="View Mouzy Campaign">
+                <img src="./assets/works/Mouzy/Manjayellam Mouzy alla - 1.webp" alt="Mouzy Avil Milk Campaign" />
+              </a>
+
+              <!-- Floating Live Verified Client Badge -->
+              <div class="hero-floating-pill">
+                <img src="./assets/clients/Coolcane logo.svg" alt="Coolcane" class="client-avatar" />
+                <span class="pill-text">Coolcane Ã— Zywo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 02: SELECTED WORK (EDITORIAL PORTFOLIO STORYTELLING)
+         ==================================================================== -->
+    <section class="section" id="selected-work">
+      <div class="container">
+        <div class="portfolio-section-header">
+          <div>
+            <span class="section-eyebrow">Portfolio</span>
+            <h2 class="section-headline">Selected Work</h2>
+          </div>
+          <p class="editorial-lead" style="max-width: 480px;">
+            A curated selection of brand transformations, packaging design, and multi-channel advertising campaigns.
+          </p>
+        </div>
+
+        <div class="portfolio-editorial-grid">
+          <!-- Project 01: Coolcane -->
+          <article class="portfolio-entry">
+            <a href="Campaign/campaign-coolcane.html" class="portfolio-entry-media">
+              <img src="./assets/Campaign/Coolcane/Coolcane copy.webp" alt="Coolcane Irumb Karimbaakum Campaign" loading="lazy" />
+            </a>
+            <div class="portfolio-entry-info">
+              <img src="./assets/clients/Coolcane logo.svg" alt="Coolcane Logo" class="portfolio-client-logo" />
+              <span class="portfolio-entry-category">Brand Strategy & Campaign Direction</span>
+              <h3 class="portfolio-entry-title">Coolcane â€” â€œIrumb Karimbaakumâ€</h3>
+              <p class="portfolio-entry-desc">
+                Elevating local street sugarcane juice into a hygienic, premium bottled lifestyle beverage. We crafted the viral "Irumb Karimbaakum" narrative showing arch-enemies united by natural sweetness, paired with custom bottle aesthetics and 3D digital motion.
+              </p>
+              <div class="portfolio-entry-tags">
+                <span class="tag-pill">Brand Positioning</span>
+                <span class="tag-pill">Packaging Direction</span>
+                <span class="tag-pill">Social Campaign</span>
+                <span class="tag-pill">3D Motion</span>
+              </div>
+              <a href="Campaign/campaign-coolcane.html" class="portfolio-entry-cta">
+                <span>Explore Full Case Study</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02: Mouzy Avil Milk (Reversed Editorial Layout) -->
+          <article class="portfolio-entry reverse">
+            <a href="Campaign/campaign-detail.html" class="portfolio-entry-media tall">
+              <img src="./assets/works/Mouzy/Manjayellam Mouzy alla - 2.webp" alt="Mouzy Avil Milk Campaign" loading="lazy" />
+            </a>
+            <div class="portfolio-entry-info">
+              <img src="./assets/clients/Mouzy logo Yellow.svg" alt="Mouzy Logo" class="portfolio-client-logo" />
+              <span class="portfolio-entry-category">Identity Preservation & Brand Campaign</span>
+              <h3 class="portfolio-entry-title">Mouzy â€” â€œManjayellam Mouzy Allaâ€</h3>
+              <p class="portfolio-entry-desc">
+                Defending an iconic Kerala dessert brand operating across India and the GCC. When copycat shops threatened market share, Zywo developed a bold, humorous positioning campaign reinforcing the authentic yellow brand identity and protecting customer trust.
+              </p>
+              <div class="portfolio-entry-tags">
+                <span class="tag-pill">Visual Identity</span>
+                <span class="tag-pill">Brand Protection</span>
+                <span class="tag-pill">Outdoor & Print</span>
+                <span class="tag-pill">Digital Rollout</span>
+              </div>
+              <a href="Campaign/campaign-detail.html" class="portfolio-entry-cta">
+                <span>Explore Full Case Study</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03: Lamar Tiles & Sanitary -->
+          <article class="portfolio-entry">
+            <a href="Campaign/campaign-lamar.html" class="portfolio-entry-media">
+              <img src="./assets/works/Lamar/Lamar bathtub.webp" alt="Lamar Architectural Campaign" loading="lazy" />
+            </a>
+            <div class="portfolio-entry-info">
+              <img src="./assets/clients/Lamar logo.svg" alt="Lamar Logo" class="portfolio-client-logo" />
+              <span class="portfolio-entry-category">Luxury Retail & Brand Positioning</span>
+              <h3 class="portfolio-entry-title">Lamar â€” â€œLamarkk Ponnoliâ€</h3>
+              <p class="portfolio-entry-desc">
+                Positioning a premier tiles and sanitary showroom as the destination for modern home luxury. We built a sophisticated visual campaign centered on pristine architectural photography, product showcases, and high-trust storytelling.
+              </p>
+              <div class="portfolio-entry-tags">
+                <span class="tag-pill">Retail Strategy</span>
+                <span class="tag-pill">Architectural Photography</span>
+                <span class="tag-pill">Social Advertising</span>
+              </div>
+              <a href="Campaign/campaign-lamar.html" class="portfolio-entry-cta">
+                <span>Explore Full Case Study</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Shairan Cafe & Edhwi (Grid Highlights) -->
+          <article class="portfolio-entry reverse">
+            <a href="gallery.html" class="portfolio-entry-media tall">
+              <img src="./assets/works/Shairan cafe/Kunafa bun.webp" alt="Shairan Cafe Kunafa Bun Visuals" loading="lazy" />
+            </a>
+            <div class="portfolio-entry-info">
+              <img src="./assets/clients/Shairan Cafe logo Orange.svg" alt="Shairan Cafe Logo" class="portfolio-client-logo" />
+              <span class="portfolio-entry-category">F&B Brand Identity & Content Creation</span>
+              <h3 class="portfolio-entry-title">Shairan Cafe â€” Modern Bakery & Coffee House</h3>
+              <p class="portfolio-entry-desc">
+                Crafting crave-worthy visual narratives for signature artisanal bakes, pistachio kunafa buns, and cafe culture. Paced video editing and social strategy that converted online engagement into queues at the counter.
+              </p>
+              <div class="portfolio-entry-tags">
+                <span class="tag-pill">F&B Branding</span>
+                <span class="tag-pill">Video Production</span>
+                <span class="tag-pill">Social Strategy</span>
+              </div>
+              <a href="gallery.html" class="portfolio-entry-cta">
+                <span>View Project in Portfolio</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: clamp(48px, 8vw, 80px);">
+          <a href="gallery.html" class="btn-secondary">
+            <span>View All Client Work & Gallery</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 03: WHAT WE DO (INTERACTIVE EDITORIAL SERVICE INDEX)
+         ==================================================================== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="services-editorial-layout">
+          <div class="services-sidebar-sticky">
+            <span class="section-eyebrow">Capabilities</span>
+            <h2 class="section-headline">What We Do</h2>
+            <p class="editorial-lead" style="margin-top: 20px;">
+              Full-spectrum brand and digital capabilities engineered to make every touchpoint feel intentional and memorable.
+            </p>
+            <div style="margin-top: 36px;">
+              <a href="services.html" class="btn-primary">
+                <span>All Services Overview</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="services-group-list">
+            <!-- Group 01: Brand & Creative -->
+            <div>
+              <div class="service-group-title">Brand & Creative</div>
+              
+              <a href="services/branding.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Branding & Strategy</h3>
+                  <p class="service-subtext">Discovery, competitive auditing, brand positioning, and unique value proposition definition.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="services/visual-identity.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Visual Identity Design</h3>
+                  <p class="service-subtext">Comprehensive design systems, typography guidelines, iconography, and master brand books.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="services/package-design.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Packaging & Print Design</h3>
+                  <p class="service-subtext">Shelf-stopping product packaging, die-cuts, retail labels, and premium collateral materials.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="services/video-production.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Video Production & AI Ads</h3>
+                  <p class="service-subtext">Commercial cinematography, cinematic editing, 3D motion graphics, and AI-powered advertising.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <!-- Group 02: Digital & Engineering -->
+            <div>
+              <div class="service-group-title">Digital & Commerce</div>
+
+              <a href="services/web-development.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Website & App Development</h3>
+                  <p class="service-subtext">Fast, responsive, modern digital architectures built for high conversion and brand credibility.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="services/ui-ux-design.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">UI / UX Design</h3>
+                  <p class="service-subtext">Intuitive user journeys, design systems, interactive prototypes, and conversion optimization.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="services/ecommerce.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">E-Commerce Management</h3>
+                  <p class="service-subtext">Product listing, catalog optimization, checkout flow refinement, and storefront growth.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <!-- Group 03: Strategy & Growth -->
+            <div>
+              <div class="service-group-title">Strategy & Growth</div>
+
+              <a href="services/online-paid-ads.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Performance Marketing</h3>
+                  <p class="service-subtext">Targeted paid ad campaigns, meta & Google funnels, ROI tracking, and audience acquisition.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="services/social-media.html" class="service-item-row">
+                <div class="service-info-wrap">
+                  <h3 class="service-name">Social Media Management</h3>
+                  <p class="service-subtext">Community engagement, viral reels production, brand aesthetic consistency, and growth scaling.</p>
+                </div>
+                <div class="service-arrow-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 04: THE ZYWO APPROACH (PROCESS STORYTELLING)
+         ==================================================================== -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div>
+          <span class="section-eyebrow">Methodology</span>
+          <h2 class="section-headline">The Zywo Approach</h2>
+          <p class="editorial-lead" style="max-width: 640px; margin-top: 16px;">
+            A rigorous 5-stage framework balancing creative intuition with strategic execution to ensure every impression drives lasting value.
+          </p>
+        </div>
+
+        <div class="approach-grid">
+          <div class="approach-step-card">
+            <span class="approach-numeral">01</span>
+            <div class="approach-card-body">
+              <h3 class="approach-card-title">Discover</h3>
+              <p class="approach-card-desc">
+                Immersion in your business model, customer psychology, and competitive landscape. We audit existing touchpoints to find your unfair advantage.
+              </p>
+            </div>
+          </div>
+
+          <div class="approach-step-card">
+            <span class="approach-numeral">02</span>
+            <div class="approach-card-body">
+              <h3 class="approach-card-title">Define</h3>
+              <p class="approach-card-desc">
+                Sharpening the brand core: mission, tone of voice, unique selling proposition, and strategic messaging hierarchy.
+              </p>
+            </div>
+          </div>
+
+          <div class="approach-step-card">
+            <span class="approach-numeral">03</span>
+            <div class="approach-card-body">
+              <h3 class="approach-card-title">Create</h3>
+              <p class="approach-card-desc">
+                Translating strategy into bespoke visual assets: logos, design systems, packaging prototypes, campaign artwork, and motion studies.
+              </p>
+            </div>
+          </div>
+
+          <div class="approach-step-card">
+            <span class="approach-numeral">04</span>
+            <div class="approach-card-body">
+              <h3 class="approach-card-title">Execute</h3>
+              <p class="approach-card-desc">
+                Flawless omnichannel rollout across physical and digital spaces: websites, retail displays, ad platforms, and social feeds.
+              </p>
+            </div>
+          </div>
+
+          <div class="approach-step-card">
+            <span class="approach-numeral">05</span>
+            <div class="approach-card-body">
+              <h3 class="approach-card-title">Improve</h3>
+              <p class="approach-card-desc">
+                Continuous performance review, conversion analysis, audience feedback loops, and strategic scaling for enduring growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="process.html" class="btn-secondary">
+            <span>Explore Complete Process & Deliverables</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 05: ABOUT ZYWO (EDITORIAL IDENTITY)
+         ==================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="about-narrative-split">
+          <div class="about-visual-frame">
+            <img src="./assets/images/Rayan hany a.webp" alt="Rayan Hany â€” Creative Director and Founder at Zywo" loading="lazy" />
+            <div class="about-quote-overlay">
+              <div class="about-quote-text">
+                â€œThe world's losing attention span day by day. To make your brand memorable, you need something different. Because Every Impression Matters.â€
+              </div>
+              <div class="about-quote-author">â€” Rayan Hany, Founder & Creative Director</div>
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <span class="section-eyebrow">Agency Philosophy</span>
+            <h2 class="section-headline">We donâ€™t just make ads. We build brands that lead.</h2>
+            <p class="editorial-lead">
+              Founded on the belief that great businesses deserve extraordinary visual representation, Zywo operates as a dedicated partner to founders, entrepreneurs, and established enterprises.
+            </p>
+            <p>
+              In 2024, our founder Rayan Hany observed countless brilliant products across India hidden behind generic marketing and uninspired logos. Zywo was created to bridge that gapâ€”combining deep design craftsmanship with strategic digital distribution so that businesses look as exceptional on the outside as they are on the inside.
+            </p>
+
+            <div class="about-key-points">
+              <div class="about-key-point">
+                <div class="title">Detail Obsessed</div>
+                <div class="desc">Every pixel, line break, frame, and color tone is scrutinized for intentionality.</div>
+              </div>
+              <div class="about-key-point">
+                <div class="title">Hands-On Partnership</div>
+                <div class="desc">No layers of bureaucracy. You collaborate directly with our creative directors and technical heads.</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 16px;">
+              <a href="about.html" class="btn-primary">
+                <span>Meet the Leadership & Team</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 06: CLIENT WORK & CREDIBILITY
+         ==================================================================== -->
+    <section class="section" id="credibility">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin-inline: auto; margin-bottom: 48px;">
+          <span class="section-eyebrow">Trust & Partnerships</span>
+          <h2 class="section-headline">Trusted by Industry Pioneers</h2>
+          <p class="editorial-lead">
+            Collaborating with ambitious enterprises across food & beverage, architecture, education, retail, and technology.
+          </p>
+        </div>
+
+        <!-- 20-Client Logo Marquee -->
+        <div class="client-marquee-wrapper">
+          <div class="client-marquee-track">
+            <div class="client-marquee-item"><img src="./assets/clients/LOGO_INDOMIE.svg" alt="Indomie" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Mouzy logo Yellow.svg" alt="Mouzy" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Coolcane logo.svg" alt="Coolcane" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Lamar logo.svg" alt="Lamar" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Shairan Cafe logo Orange.svg" alt="Shairan Cafe" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Edhwi logo.svg" alt="Edhwi" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Trace  logo.svg" alt="Trace" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Y69 logo.svg" alt="Y69" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Criswings logo.svg" alt="Criswings" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Fillmore logo.svg" alt="Fillmore" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Mandi manzil.svg" alt="Mandi Manzil" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Polski Kebab.svg" alt="Polski Kebab" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Pisang logo.svg" alt="Pisang" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Potto pomme.svg" alt="Potto Pomme" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/ARC logo.svg" alt="ARC" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Atom jr Logo.svg" alt="Atom jr" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/fluxify logo.svg" alt="Fluxify" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/fudge logo.svg" alt="Fudge" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/thara group logo.svg" alt="Thara Group" /></div>
+            <!-- Duplicate set for seamless continuous marquee loop -->
+            <div class="client-marquee-item"><img src="./assets/clients/LOGO_INDOMIE.svg" alt="Indomie" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Mouzy logo Yellow.svg" alt="Mouzy" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Coolcane logo.svg" alt="Coolcane" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Lamar logo.svg" alt="Lamar" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Shairan Cafe logo Orange.svg" alt="Shairan Cafe" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Edhwi logo.svg" alt="Edhwi" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Trace  logo.svg" alt="Trace" /></div>
+            <div class="client-marquee-item"><img src="./assets/clients/Y69 logo.svg" alt="Y69" /></div>
+          </div>
+        </div>
+
+        <!-- Verified Authentic Client Testimonials Grid -->
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              â€œThe designs and concepts are consistently impressive. Zywo brings fresh ideas that align perfectly with our brand vision across all outlets.â€
+            </p>
+            <div class="testimonial-author-row">
+              <img src="./assets/Testimonials/Ashar mouzy.webp" alt="Ashar Mouzy" class="testimonial-avatar" />
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author-name">Ashar Mouzy</span>
+                <span class="testimonial-author-brand">Founder, Mouzy Avil Milk</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              â€œThey handle every task with seriousness and professionalism. Working with this digital agency is smooth, efficient, and truly hassle-free.â€
+            </p>
+            <div class="testimonial-author-row">
+              <img src="./assets/Testimonials/Shayban.webp" alt="Shayban" class="testimonial-avatar" />
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author-name">Shayban</span>
+                <span class="testimonial-author-brand">Co-Founder, Coolcane</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              â€œOur social media finally has direction and consistency. Zywo made our content intentional, resulting in steady and visible business growth.â€
+            </p>
+            <div class="testimonial-author-row">
+              <img src="./assets/Testimonials/Ubais.webp" alt="Ubais" class="testimonial-avatar" />
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author-name">Ubais</span>
+                <span class="testimonial-author-brand">Director, Lamar Tiles</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              â€œA very cooperative and supportive team throughout the process. Thanks to Zywo, our brand page has become significantly more active and engaging.â€
+            </p>
+            <div class="testimonial-author-row">
+              <img src="./assets/Testimonials/Saima Nadeem.webp" alt="Saima Nadeem" class="testimonial-avatar" />
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author-name">Saima Nadeem</span>
+                <span class="testimonial-author-brand">Founder, Edhwi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              â€œA team of highly visionary individuals with strong creative potential. Their approach reflects both innovation and long-term strategic thinking.â€
+            </p>
+            <div class="testimonial-author-row">
+              <img src="./assets/Testimonials/Nadeem Safran.webp" alt="Nadeem Safran" class="testimonial-avatar" />
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author-name">Nadeem Safran</span>
+                <span class="testimonial-author-brand">Creative Lead, Karikku</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              â€œThey understood our vision and translated it into a complete brand system. Structured, memorable, and scalable design from start to finish.â€
+            </p>
+            <div class="testimonial-author-row">
+              <img src="./assets/Testimonials/Yasin.webp" alt="Yasin" class="testimonial-avatar" />
+              <div class="testimonial-author-meta">
+                <span class="testimonial-author-name">Yasin Salim</span>
+                <span class="testimonial-author-brand">Founder, Y69</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 07: START A PROJECT (MINIMAL CONVERSION MOMENT)
+         ==================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="start-project-card">
+          <span class="section-eyebrow">Start A Conversation</span>
+          <h2 class="section-headline">Have a project in mind? Let's make an impression.</h2>
+          <p class="editorial-lead">
+            Whether you need a complete brand identity, high-performance web platform, or multi-channel advertising campaign, we are ready to build it with you.
+          </p>
+
+          <div class="project-contact-routes">
+            <button class="btn-primary" data-open-connect>
+              <span>Start a Project</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <a href="https://wa.me/916282881159?text=Hi%20Zywo%2C%20let's%20talk%20about%20a%20project." target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>Chat on WhatsApp</span>
+            </a>
+
+            <a href="mailto:hello@zywo.com" class="btn-secondary">
+              <span>Email Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <!-- Editorial Unified Footer -->
+  <bento-footer></bento-footer>
+
+  <!-- Modular Floating Connect Action & Form Modal -->
+  <connect-button></connect-button>
+
+</body>
+
+</html>

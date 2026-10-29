@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Zywo â€” Creative Marketing & Branding Agency | Calicut & Malappuram</title>
+  <meta name="description"
+    content="Get in touch with Zywo Agency. Connect via WhatsApp, phone, email, or send us a project brief. We look forward to creating impressions that matter." />
+  <link rel="canonical" href="https://zywo.com/contact.html" />
+
+  <link rel="icon" type="image/svg+xml" href="./assets/logo/Zywo%20favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="module" src="./components/Navbar.js"></script>
+  <script type="module" src="./components/ConnectButton.js"></script>
+  <script type="module" src="./components/Footer.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <bento-navbar></bento-navbar>
+
+  <main>
+    <section class="page-header-editorial">
+      <div class="container">
+        <div class="page-header-grid">
+          <div>
+            <span class="section-eyebrow">Start a Project</span>
+            <h1 class="hero-title">Letâ€™s Talk.</h1>
+          </div>
+          <div>
+            <p class="editorial-lead">
+              Every breakthrough begins with a conversation. Share your brand ambitions with our leadership team, and let's craft an unforgettable impression.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 48px;">
+          <div style="display: grid; grid-template-columns: 1fr; gap: 48px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+              <!-- Direct Channel 1: WhatsApp -->
+              <div class="deliverable-card">
+                <span class="step-tag">Instant Response</span>
+                <h4>WhatsApp Us</h4>
+                <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                  Fastest way to get in touch. Connect directly with our team for quick inquiries or project scoping.
+                </p>
+                <a href="https://wa.me/916282881159?text=Hi%20Zywo%2C%20let's%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top: 16px; width: fit-content;">
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+
+              <!-- Direct Channel 2: Phone -->
+              <div class="deliverable-card">
+                <span class="step-tag">Call Us</span>
+                <h4>Direct Phone</h4>
+                <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                  Prefer speaking with someone directly? Call our office team during regular business hours.
+                </p>
+                <a href="tel:+916282881159" class="btn-secondary" style="margin-top: 16px; width: fit-content;">
+                  <span>+91 6282881159</span>
+                </a>
+              </div>
+
+              <!-- Direct Channel 3: Email -->
+              <div class="deliverable-card">
+                <span class="step-tag">Email Enquiries</span>
+                <h4>Official Mail</h4>
+                <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                  Send your RFPs, creative briefs, pitch decks, or collaboration opportunities.
+                </p>
+                <a href="mailto:hello@zywo.com" class="btn-secondary" style="margin-top: 16px; width: fit-content;">
+                  <span>hello@zywo.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Editorial Enquiry Form -->
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: clamp(32px, 6vw, 64px); max-width: 800px; margin-inline: auto; width: 100%;">
+            <div style="margin-bottom: 32px; text-align: center;">
+              <span class="section-eyebrow">Project Brief</span>
+              <h2 class="section-headline" style="font-size: 2.25rem;">Send Us An Enquiry</h2>
+              <p class="editorial-lead" style="font-size: 1.0625rem; margin-top: 8px;">
+                Fill in the details below and we will review your brand context and get back to you within 24 hours.
+              </p>
+            </div>
+
+            <form id="pageEnquiryForm" style="display: flex; flex-direction: column; gap: 20px;">
+              <div class="input-field-wrap">
+                <label for="contactFullName">Full Name *</label>
+                <input type="text" id="contactFullName" name="Name" placeholder="Your Name" required />
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="contactPhoneNumber">Phone / WhatsApp Number *</label>
+                <input type="tel" id="contactPhoneNumber" name="Phone" placeholder="+91 98765 43210" required />
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="contactRequirements">Tell us about your brand & requirements *</label>
+                <textarea id="contactRequirements" name="Message" rows="5" placeholder="What are your primary goals, deliverables, and estimated timeline?" required></textarea>
+              </div>
+
+              <div class="form-feedback-msg" id="contactPageFeedback"></div>
+
+              <button type="submit" class="btn-primary" id="contactPageSubmitBtn" style="width: 100%; padding: 18px;">
+                <span>Send Enquiry</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agency Locations Strip -->
+    <section class="section section-alt">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+          <div>
+            <span class="section-eyebrow">Location Hub</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px;">Calicut & Malappuram</h3>
+            <p>Kerala, India</p>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 4px;">Serving clients locally across Kerala, pan-India, and internationally in the GCC.</p>
+          </div>
+
+          <div>
+            <span class="section-eyebrow">Office Hours</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px;">Monday â€” Saturday</h3>
+            <p>9:30 AM â€” 6:30 PM IST</p>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 4px;">WhatsApp and digital emergency responses 24/7.</p>
+          </div>
+
+          <div>
+            <span class="section-eyebrow">Tagline</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--accent-blue); margin-bottom: 8px;">â€œEvery Impression Mattersâ€</h3>
+            <p>Non-negotiable brand philosophy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <bento-footer></bento-footer>
+  <connect-button></connect-button>
+
+  <script>
+    const form = document.querySelector('#pageEnquiryForm');
+    const feedback = document.querySelector('#contactPageFeedback');
+    const submitBtn = document.querySelector('#contactPageSubmitBtn');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        feedback.className = 'form-feedback-msg';
+        feedback.textContent = '';
+        feedback.style.display = 'none';
+
+        const originalBtnHtml = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>Sending...</span>`;
+
+        const name = form.querySelector('#contactFullName').value.trim();
+        const phone = form.querySelector('#contactPhoneNumber').value.trim();
+        const message = form.querySelector('#contactRequirements').value.trim();
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9HHBLeVoujebHuy9-CBKp4Be2ZCSrkT1CDFTGxiTgsUSBHPt2d2qu2M7mfiyM9lXQ/exec';
+
+        const formData = new FormData();
+        formData.append('Name', name);
+        formData.append('Phone', phone);
+        formData.append('Message', message);
+        formData.append('Date', new Date().toLocaleString());
+
+        try {
+          const res = await fetch(scriptURL, {
+            method: 'POST',
+            body: formData,
+            mode: 'cors'
+          });
+
+          const data = await res.text();
+          if (data && (data.includes("Success") || data.includes("success") || res.ok)) {
+            feedback.className = 'form-feedback-msg success';
+            feedback.textContent = "Thank you! Your enquiry has been received. Our leadership team will review and contact you shortly.";
+            form.reset();
+          } else {
+            throw new Error(data || "Invalid response");
+          }
+        } catch (err) {
+          console.error("Contact Form Error:", err);
+          feedback.className = 'form-feedback-msg error';
+          feedback.textContent = "Network error: unable to complete submission at this moment. Please message us directly via WhatsApp (+91 6282881159) or email hello@zywo.com.";
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
+

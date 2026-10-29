@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers at Zywo — Join Our Creative Collective | Every Impression Matters</title>
+  <meta name="description"
+    content="Join the creative team at Zywo. We are hiring Graphic Designers, UI/UX Designers, Developers, Video Editors, and Digital Marketers in Kerala." />
+  <link rel="canonical" href="https://zywo.com/careers.html" />
+
+  <link rel="icon" type="image/svg+xml" href="./assets/logo/Zywo%20favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="module" src="./components/Navbar.js"></script>
+  <script type="module" src="./components/ConnectButton.js"></script>
+  <script type="module" src="./components/Footer.js"></script>
+  <script src="./careers.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <bento-navbar></bento-navbar>
+
+  <main>
+    <section class="page-header-editorial">
+      <div class="container">
+        <div class="page-header-grid">
+          <div>
+            <span class="section-eyebrow">Join the Team</span>
+            <h1 class="hero-title">Build With Us</h1>
+          </div>
+          <div>
+            <p class="editorial-lead">
+              We are always seeking visionary designers, cinematographers, strategists, and engineers who care deeply about craft and obsessive attention to detail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Positions & Culture -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 64px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+            <div class="deliverable-card">
+              <span class="step-tag">Design</span>
+              <h4>Graphic & Brand Designer</h4>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                Focusing on identity systems, packaging architecture, editorial typography, and retail collateral.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-top: 8px;">
+                Calicut / Malappuram • Full-time
+              </div>
+            </div>
+
+            <div class="deliverable-card">
+              <span class="step-tag">Digital</span>
+              <h4>UI / UX & Frontend Developer</h4>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                Crafting responsive, high-performance web experiences with smooth micro-animations and clean semantic code.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-top: 8px;">
+                Calicut / Malappuram • Full-time
+              </div>
+            </div>
+
+            <div class="deliverable-card">
+              <span class="step-tag">Production</span>
+              <h4>Video Editor & Motion Designer</h4>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                Commercial video pacing, 3D motion graphics, color grading, sound design, and viral social content.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-top: 8px;">
+                Calicut / Malappuram • Full-time
+              </div>
+            </div>
+
+            <div class="deliverable-card">
+              <span class="step-tag">Growth</span>
+              <h4>Performance & Growth Marketer</h4>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary);">
+                Meta & Google advertising funnels, conversion optimization, customer acquisition, and analytics tracking.
+              </p>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-top: 8px;">
+                Calicut / Malappuram • Full-time
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Form -->
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: clamp(32px, 6vw, 64px); max-width: 800px; margin-inline: auto; width: 100%;">
+            <div style="margin-bottom: 32px; text-align: center;">
+              <span class="section-eyebrow">Application Form</span>
+              <h2 class="section-headline" style="font-size: 2.25rem;">Submit Your Profile</h2>
+              <p class="editorial-lead" style="font-size: 1.0625rem; margin-top: 8px;">
+                Tell us about your background and share a link to your best work.
+              </p>
+            </div>
+
+            <form id="careers-form" onsubmit="submitCareersForm(event)" style="display: flex; flex-direction: column; gap: 20px;">
+              <div class="input-field-wrap">
+                <label for="Name">Full Name *</label>
+                <input type="text" id="Name" name="Name" required placeholder="Full Name" />
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="Phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="Phone" name="Phone" required placeholder="+91 98765 43210" />
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="Email">Email Address *</label>
+                <input type="email" id="Email" name="Email" required placeholder="name@example.com" />
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="Role">Role Applying For *</label>
+                <select id="Role" name="Role" required>
+                  <option value="" disabled selected>Select a position...</option>
+                  <option value="Graphic Designer">Graphic Designer</option>
+                  <option value="UI/UX Designer">UI/UX Designer</option>
+                  <option value="Frontend Developer">Frontend Developer</option>
+                  <option value="Video Editor">Video Editor</option>
+                  <option value="Brand Strategist">Brand Strategist</option>
+                  <option value="Social Media Manager">Social Media Manager</option>
+                  <option value="Performance Marketer">Performance Marketer</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="Portfolio_Link">Portfolio / Behance / GitHub Link *</label>
+                <input type="url" id="Portfolio_Link" name="Portfolio_Link" required placeholder="https://..." />
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="Message">Cover Note / Why Zywo? *</label>
+                <textarea id="Message" name="Message" rows="4" required placeholder="Tell us about yourself and what you'd like to build with us..."></textarea>
+              </div>
+
+              <div class="form-feedback-msg" id="careersFormFeedback"></div>
+
+              <button type="submit" class="btn-primary" id="submitFormBtn" style="width: 100%; padding: 18px;">
+                <span>Submit Application</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <bento-footer></bento-footer>
+  <connect-button></connect-button>
+</body>
+
+</html>

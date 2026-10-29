@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selected Work & Portfolio — Zywo | Every Impression Matters</title>
+  <meta name="description"
+    content="Browse Zywo's portfolio of creative brand identities, campaigns, packaging, and digital projects for Coolcane, Mouzy, Lamar, Shairan Cafe, Edhwi, and more." />
+  <link rel="canonical" href="https://zywo.com/gallery.html" />
+
+  <link rel="icon" type="image/svg+xml" href="./assets/logo/Zywo%20favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="module" src="./components/Navbar.js"></script>
+  <script type="module" src="./components/ConnectButton.js"></script>
+  <script type="module" src="./components/Footer.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <bento-navbar></bento-navbar>
+
+  <main>
+    <section class="page-header-editorial">
+      <div class="container">
+        <div class="page-header-grid">
+          <div>
+            <span class="section-eyebrow">Portfolio Index</span>
+            <h1 class="hero-title">Selected Work</h1>
+          </div>
+          <div>
+            <p class="editorial-lead">
+              A gallery of genuine client work across brand architecture, packaging, multi-channel advertising, and digital design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Interactive Category Filter Bar -->
+        <div class="filter-bar" id="galleryFilterBar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="campaigns">Campaigns</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="packaging">Packaging</button>
+          <button class="filter-btn" data-filter="digital">Digital & Social</button>
+        </div>
+
+        <!-- Editorial Gallery Grid -->
+        <div class="gallery-editorial-grid" id="galleryGrid">
+          <!-- Item 01: Coolcane Campaign -->
+          <div class="gallery-card" data-category="campaigns packaging">
+            <a href="Campaign/campaign-coolcane.html" class="gallery-card-thumb">
+              <img src="./assets/Campaign/Coolcane/Coolcane copy.webp" alt="Coolcane Campaign" loading="lazy" />
+            </a>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Coolcane</span>
+              <h3 class="gallery-card-title">Irumb Karimbaakum Campaign</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Viral street beverage repositioning & custom sugarcane bottle packaging.
+              </p>
+              <a href="Campaign/campaign-coolcane.html" class="portfolio-entry-cta" style="margin-top: 8px;">View Case Study →</a>
+            </div>
+          </div>
+
+          <!-- Item 02: Mouzy Avil Milk -->
+          <div class="gallery-card" data-category="campaigns branding">
+            <a href="Campaign/campaign-detail.html" class="gallery-card-thumb">
+              <img src="./assets/works/Mouzy/Manjayellam Mouzy alla - 1.webp" alt="Mouzy Avil Milk" loading="lazy" />
+            </a>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Mouzy</span>
+              <h3 class="gallery-card-title">Manjayellam Mouzy Alla</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Brand protection & identity reinforcement across 100+ dessert outlets.
+              </p>
+              <a href="Campaign/campaign-detail.html" class="portfolio-entry-cta" style="margin-top: 8px;">View Case Study →</a>
+            </div>
+          </div>
+
+          <!-- Item 03: Lamar Sanitary -->
+          <div class="gallery-card" data-category="campaigns branding">
+            <a href="Campaign/campaign-lamar.html" class="gallery-card-thumb">
+              <img src="./assets/works/Lamar/Lamar bathtub.webp" alt="Lamar Architectural Campaign" loading="lazy" />
+            </a>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Lamar</span>
+              <h3 class="gallery-card-title">Lamarkk Ponnoli — Luxury Living</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Premium architectural visual campaign for tiles & luxury sanitary retail.
+              </p>
+              <a href="Campaign/campaign-lamar.html" class="portfolio-entry-cta" style="margin-top: 8px;">View Case Study →</a>
+            </div>
+          </div>
+
+          <!-- Item 04: Shairan Cafe -->
+          <div class="gallery-card" data-category="branding digital">
+            <div class="gallery-card-thumb">
+              <img src="./assets/works/Shairan cafe/Kunafa bun.webp" alt="Shairan Cafe" loading="lazy" />
+            </div>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Shairan Cafe</span>
+              <h3 class="gallery-card-title">Pistachio Kunafa & Cafe Identity</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Artisanal cafe branding, social video storytelling, and menu aesthetics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 05: Edhwi Heritage Foods -->
+          <div class="gallery-card" data-category="packaging branding">
+            <div class="gallery-card-thumb">
+              <img src="./assets/works/Edhwi/Edhwi - vermicelli .webp" alt="Edhwi Food Packaging" loading="lazy" />
+            </div>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Edhwi</span>
+              <h3 class="gallery-card-title">Heritage Foods Packaging System</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Premium consumer packaging for vermicelli, roasted specialties, and culinary oils.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 06: Mouzy Meal in a Glass -->
+          <div class="gallery-card" data-category="campaigns digital">
+            <a href="Campaign/campaign-mouzy-lunch.html" class="gallery-card-thumb">
+              <img src="./assets/works/Mouzy/Mouzy - meal in a glass.webp" alt="Mouzy Lunch Alternative" loading="lazy" />
+            </a>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Mouzy</span>
+              <h3 class="gallery-card-title">Mouzy yullappol oonenthin?</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Positioning traditional Avil Milk as a fulfilling lunchtime beverage for modern youth.
+              </p>
+              <a href="Campaign/campaign-mouzy-lunch.html" class="portfolio-entry-cta" style="margin-top: 8px;">View Case Study →</a>
+            </div>
+          </div>
+
+          <!-- Item 07: Y69 Streetwear & Lifestyle -->
+          <div class="gallery-card" data-category="branding packaging">
+            <div class="gallery-card-thumb">
+              <img src="./assets/works/Y69/Y69 - box design.webp" alt="Y69 Packaging" loading="lazy" />
+            </div>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Y69</span>
+              <h3 class="gallery-card-title">Custom Packaging & Merch Graphics</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Vibrant illustration design, custom boxes, and bold pop-culture merchandise aesthetics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 08: Indomie Creative Social Ads -->
+          <div class="gallery-card" data-category="digital campaigns">
+            <div class="gallery-card-thumb">
+              <img src="./assets/works/Indomie/Indomie vegitables.webp" alt="Indomie Advertising" loading="lazy" />
+            </div>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Indomie</span>
+              <h3 class="gallery-card-title">Digital Advertising & Pop Culture</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Playful festive social creatives and topical ad concepts for the global noodle brand.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 09: Trace Educational Group -->
+          <div class="gallery-card" data-category="digital branding">
+            <div class="gallery-card-thumb">
+              <img src="./assets/works/Trace/Trace - admission.webp" alt="Trace Academy" loading="lazy" />
+            </div>
+            <div class="gallery-card-body">
+              <span class="gallery-card-client">Trace</span>
+              <h3 class="gallery-card-title">Academy Admissions Campaign</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 4px;">
+                Student enrollment creative direction and inspirational educational social branding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Inquiry Footer Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="start-project-card" style="margin-bottom: 0;">
+          <span class="section-eyebrow">Next Impression</span>
+          <h2 class="section-headline">Want to feature your brand here?</h2>
+          <p class="editorial-lead">Let's collaborate on your next campaign, identity, or digital platform.</p>
+          <button class="btn-primary" data-open-connect>
+            <span>Start a Project</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <bento-footer></bento-footer>
+  <connect-button></connect-button>
+
+  <script>
+    // Simple filter tabs logic
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('.gallery-card').forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

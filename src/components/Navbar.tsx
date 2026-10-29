@@ -37,7 +37,8 @@ export default function Navbar({ onStartProject }: NavbarProps) {
     { label: "About", href: "/about", id: "about" },
     { label: "Services", href: "/services", id: "services" },
     { label: "Work", href: "/work", id: "work" },
-    { label: "Process", href: "/approach", id: "approach" },
+    { label: "Approach", href: "/approach", id: "approach" },
+    { label: "Careers", href: "/careers", id: "careers" },
     { label: "Contact", href: "/contact", id: "contact" },
   ];
 

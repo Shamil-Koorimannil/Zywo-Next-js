@@ -75,6 +75,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="/careers"
+                  className="hover:text-zywo-navy transition-colors block"
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
                   href="/contact"
                   className="hover:text-zywo-navy transition-colors block"
                 >
